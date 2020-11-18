@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+.calculator-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-window {
+    display: flex;
+    border: solid;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+}
+
+.calc-screen {
+    display: flex;
+    border: solid;
+    background-color: #1c1c1c;
+    color: white;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    justify-content: flex-end;
+    height: 20%;
+    width: 100%;    
+    border: none;
+    font-size: xx-large;
+    padding: 5px;
+}
+
+
+.key-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    background-color: #1c1c1c;
+}
+
+.slot {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.spacing {
+    display: flex;
+    height: 100px;
+}
+
+.key {
+    display: flex;
+    background-color: #D4D4D2;
+    width: 50px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    margin: 0.8px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+.key:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: #c2c2c0;
+}
+
+.key.clear {
+    display: flex;
+    flex-grow: 8;
+}
+
+.key.operation {
+    display: flex;
+    width: 55px;
+    background-color: #ff9500;
+    flex-grow: 1;
+}
+
+.key.equal {
+    display: flex;
+    width: 55px;
+    background-color: #ff9500;
+    flex-grow:1;
+}
+
+.key.zero {
+    display: flex;
+    flex-grow: 14;
+}
+
+.key.operation:hover {
+    background-color: #f8b65a;
+    cursor: pointer;
+}
+
+.key.operation:active {
+    background-color: #df8200;
+}
+
+.key.equal:hover {
+    background-color: #f8b65a;
+    cursor: pointer;
+}
+
+.key.equal:active {
+    background-color:#df8200;
+}
